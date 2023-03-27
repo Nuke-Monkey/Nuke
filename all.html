@@ -5,15 +5,17 @@
 	<script src="all.js" defer></script>
 	</head>
 	<body>
-		<div class ="search-wrapper">
-      		<label for="search">Search  </label>
-		<input type="search" id="search" data-search>
+  		<div class="search-wrapper">
+			<label for="search">Search Users</label>
+			<input type="search" id="search" data-search>
 		</div>
-		<div class="project-cards">
-			<div class="card">
-				<div class="title"><a href="tanuki_sunset"><img src="thumbnails/tanuki_sunset.png" alt="Tanuki Sunset"></a></div>
-				<div class="creator">NukerBox Team</div>
-			</div>
+		<div class="user-cards" data-user-cards-container></div>
+			<template data-user-template>
+				<div class="card">
+					<div class="header" data-header></div>
+					<div class="body" data-body></div>
+				</div>
+			</template>
 		<a href="/projects/flappy_bird"><img src="thumbnails/flappy_bird.jpg" alt="Flappy Bird"></a>
 	</body>
 </html>
