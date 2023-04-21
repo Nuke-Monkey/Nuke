@@ -1,27 +1,42 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> NukerBox || All </title>
-
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/all.css">
-                
-        <!-- Unicons CSS -->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-                        
-    </head>
-    <body>
-        <div class="input-box">
-            <input type="text" placeholder="Search...">
-            <span class="icon">
-                <i class="uil uil-search search-icon"></i>
-            </span>
-            <i class="uil uil-times close-icon"></i>
-        </div>
-
+<html>
+      
+<head>
+    <title>
+        Creating Search Bar using HTML
+        CSS and Javascript
+    </title>
+      
+    <!-- linking the stylesheet(CSS) -->
+    <link rel="stylesheet" type="text/css" href="./all.css">
+</head>
+  
+<body>
+      
+    <!-- input tag -->
+    <input id="searchbar" onkeyup="search_animal()" type="text"
+        name="search" placeholder="Search Projects...">
+      
+    <!-- ordered list -->
+    <ol id='list'>
+        <li class="animals">Cat</li>
+        <li class="animals">Dog</li>
+        <li class="animals">Elephant</li>
+        <li class="animals">Fish</li>
+        <li class="animals">Gorilla</li>
+        <li class="animals">Monkey</li>
+        <li class="animals">Turtle</li>
+        <li class="animals">Whale</li>
+        <li class="animals">Aligator</li>
+        <li class="animals">Donkey</li>
+        <li class="animals">Horse</li>
+    </ol>
+      
+    <!-- linking javascript -->
+    <script src="./all.js"></script>
+</body>
+  
+</html>
         <script>
             let inputBox = document.querySelector(".input-box"),
                 searchIcon = document.querySelector(".icon"),
