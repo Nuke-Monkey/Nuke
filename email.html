@@ -3,8 +3,8 @@
 $to = 'thenukemonkey@gmail.com';
 $subject = 'Email from website';
 $message = 'Hello! This is an email sent from your website.';
-$headers = 'From: webmaster@example.com' . "\r\n" .
-    'Reply-To: webmaster@example.com' . "\r\n" .
+$headers = 'From: thenukemonkey@gmail.com' . "\r\n" .
+    'Reply-To: thenukemonkey@gmail.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
 mail($to, $subject, $message, $headers);
